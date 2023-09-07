@@ -5,9 +5,9 @@ function ListComponent({ data, onDelete, onEdit }) {
     <ul>
       {data.map((item) => (
         <li key={item.id}>
-          {item.name}
-          <button onClick={() => onDelete(item.id)}>Delete</button>
-          <button onClick={() => onEdit(item.id)}>Edit</button>
+          {item.title}
+          <button onClick={() => onDelete(item._id)}>Delete</button>
+          <button onClick={() => onEdit(item._id)}>Edit</button>
         </li>
       ))}
     </ul>
